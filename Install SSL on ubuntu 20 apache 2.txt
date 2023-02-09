@@ -1,0 +1,22 @@
+﻿Install SSL on ubuntu 20 apache 2
+
+
+1. Allow HTTPS
+   1. ufw allow 'Apache Full'
+   2. ufw delete allow 'Apache'
+2. Install cerbot [if not installed]
+   1. apt install certbot python3-certbot-apache
+   2. sudo apache2ctl configtest
+   3. systemctl reload apache2
+3. Allow https
+   1. sudo ufw status
+   2. ufw allow 'Apache Full'
+   3. ufw delete allow 'Apache'
+4. Cerbot for ssl
+   1. certbot --apache 
+        Or bellow
+   2. certbot --apache -d engi.cash -d www.your_domain.com
+5. Verify cerbot auto renewal
+   1. systemctl status certbot.timer
+6. Test Renew Process
+   1. certbot renew --dry-run
