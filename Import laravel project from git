@@ -1,0 +1,12 @@
+1.Run git clone <my-cool-project>
+2.Run composer install
+3.Run cp .env.example .env
+4.Run php artisan key:generate
+5.Run php artisan migrate
+6.Run php artisan serve
+7.Go to link localhost:8000
+
+------Error resolving
+On step 2, if error occurs:
+Run>> composer update
+This command worked for my php 6  and laravel lower than version 8
