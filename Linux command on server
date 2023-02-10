@@ -1,0 +1,19 @@
+
+Useful Commands for Ubuntu server
+
+1.  Search any running process
+  $ ps -ef |grep process_name
+
+2. Run a background script using nohup
+  Example running a jar file using nohup.
+  $ nohup java -jar file_name.jar &
+  Same can be done with python and other scripts
+  
+  See nohup output log
+  $ tail -f nohup.out
+  
+3.  Make a file executatble or change permission
+  $ chmod +x filename.sh
+  
+4. To run your script :
+./script-name-here.sh
