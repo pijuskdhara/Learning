@@ -1,0 +1,4 @@
+
+Installation------------
+composer create-project --prefer-dist laravel/laravel:^9.0 project_name
+run app: php artisan serve
