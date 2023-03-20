@@ -2,3 +2,14 @@
 Installation------------
 composer create-project --prefer-dist laravel/laravel:^9.0 project_name
 run app: php artisan serve
+
+--optional----
+Install Laravel breeze starter kit:
+  composer require laravel/breeze --dev
+  
+  php artisan breeze:install
+  php artisan migrate
+  
+  npm install laravel-mix@latest --save-dev
+  npm install
+  npm run dev
