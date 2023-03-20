@@ -13,3 +13,9 @@ Install Laravel breeze starter kit:
   npm install laravel-mix@latest --save-dev
   npm install
   npm run dev
+
+Create Table:
+  php artisan make:migration create_posts_table  --create posts
+  
+Create Controller
+  php artisan make:controller PostController --model=Posts
