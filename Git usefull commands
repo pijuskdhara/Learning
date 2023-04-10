@@ -1,0 +1,16 @@
+
+1.  Clone Git
+    $ sudo git clone [url]
+  
+2.  Pull git repo
+    When inside project folder
+    $ sudo get pull 
+    or
+    $ sudo get pull [repo url]
+    
+3.  Pull repo without committing changes locally (Replacing code on local)
+    >> Go inside working git local directory, then use following commands
+    $ git reset --hard
+    $ git pull
+    
+    
