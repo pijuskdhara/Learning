@@ -17,3 +17,9 @@ Useful Commands for Ubuntu server
   
 4. To run your script :
 ./script-name-here.sh
+
+5. To change ownership of ‘wordpress’ directory.
+  chown -R www-data:www-data /var/www/html/wordpress/
+  
+6. change File permissions of the WordPress folder.
+  chmod -R 755 /var/www/html/wordpress/
