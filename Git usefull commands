@@ -13,4 +13,5 @@
     $ git reset --hard
     $ git pull
     
-    
+4. Which brunch I am working on?
+    git rev-parse --abbrev-ref HEAD
