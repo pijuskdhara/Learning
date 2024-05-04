@@ -1,35 +1,30 @@
 Deploying a React project on Firebase involves several steps. Here's a general guide to help you get started:
 
-Install Firebase Tools:
+1. Install Firebase Tools:
 If you haven't already, you need to install Firebase tools globally on your machine. You can do this using npm (Node Package Manager) with the following command:
-Copy code
-npm install -g firebase-tools
+$ npm install -g firebase-tools
 
-Login to Firebase:
+2. Login to Firebase:
 After installing Firebase tools, you need to log in to Firebase using the command:
-Copy code
-firebase login
+$ firebase login
 This will open a browser window where you can log in with your Google account and authenticate Firebase CLI.
 
-Create a Firebase Project:
+3. Create a Firebase Project:
 If you haven't created a Firebase project yet, you can create one using the Firebase console (https://console.firebase.google.com/). Once your project is created, note down the project ID.
-Initialize Firebase in your React project:
+
+4. Initialize Firebase in your React project:
 Navigate to your React project directory and initialize Firebase by running:
-csharp
-Copy code
-firebase init
+$ firebase init
 Follow the prompts to select the Firebase features you want to use (Hosting in this case) and associate your project with the Firebase project you created earlier.
 
-Build your React project:
+5. Build your React project:
 Before deploying, you need to build your React project. Run the following command in your project directory:
-arduino
-Copy code
-npm run build
+$ npm run build
 This will create an optimized production build of your React app in the build directory.
 
-Deploy to Firebase:
+6. Deploy to Firebase:
 Finally, deploy your React project to Firebase Hosting using the command:
-Copy code
-firebase deploy
+$ firebase deploy
+
 Firebase will provide you with a hosting URL where your React app is deployed. You can access your app using that URL.
 That's it! Your React project should now be successfully deployed on Firebase Hosting. You can also configure custom domain, SSL, and other settings through the Firebase console if needed.
